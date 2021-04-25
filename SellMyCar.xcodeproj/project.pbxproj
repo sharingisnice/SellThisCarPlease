@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612AF44F2635E6D900B4058B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 612AF44E2635E6D900B4058B /* GoogleService-Info.plist */; };
 		61F093BE2635DF16007C7D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F093BD2635DF16007C7D9E /* AppDelegate.swift */; };
 		61F093C02635DF16007C7D9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F093BF2635DF16007C7D9E /* SceneDelegate.swift */; };
 		61F093C22635DF16007C7D9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F093C12635DF16007C7D9E /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		61F093C82635DF16007C7D9E /* SellMyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61F093C62635DF16007C7D9E /* SellMyCar.xcdatamodeld */; };
 		61F093CA2635DF16007C7D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61F093C92635DF16007C7D9E /* Assets.xcassets */; };
 		61F093CD2635DF16007C7D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F093CB2635DF16007C7D9E /* LaunchScreen.storyboard */; };
+		68158B620383AFE1D5E2E415 /* Pods_SellMyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1579CD12E0BFA442C19343D4 /* Pods_SellMyCar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093599C281020EC367C02579 /* Pods-SellMyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMyCar.debug.xcconfig"; path = "Target Support Files/Pods-SellMyCar/Pods-SellMyCar.debug.xcconfig"; sourceTree = "<group>"; };
+		1579CD12E0BFA442C19343D4 /* Pods_SellMyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellMyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		612AF44E2635E6D900B4058B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61F093BA2635DF16007C7D9E /* SellMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SellMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F093BD2635DF16007C7D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F093BF2635DF16007C7D9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		61F093C92635DF16007C7D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61F093CC2635DF16007C7D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61F093CE2635DF16007C7D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B80FDFBC3EE6D473627E70 /* Pods-SellMyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellMyCar.release.xcconfig"; path = "Target Support Files/Pods-SellMyCar/Pods-SellMyCar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68158B620383AFE1D5E2E415 /* Pods_SellMyCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BFAC904F102F97A28C660FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				093599C281020EC367C02579 /* Pods-SellMyCar.debug.xcconfig */,
+				E4B80FDFBC3EE6D473627E70 /* Pods-SellMyCar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		61F093B12635DF16007C7D9E = {
 			isa = PBXGroup;
 			children = (
 				61F093BC2635DF16007C7D9E /* SellMyCar */,
 				61F093BB2635DF16007C7D9E /* Products */,
+				0BFAC904F102F97A28C660FE /* Pods */,
+				AC70500ED5BDE7D928916859 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +84,17 @@
 				61F093CB2635DF16007C7D9E /* LaunchScreen.storyboard */,
 				61F093CE2635DF16007C7D9E /* Info.plist */,
 				61F093C62635DF16007C7D9E /* SellMyCar.xcdatamodeld */,
+				612AF44E2635E6D900B4058B /* GoogleService-Info.plist */,
 			);
 			path = SellMyCar;
+			sourceTree = "<group>";
+		};
+		AC70500ED5BDE7D928916859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1579CD12E0BFA442C19343D4 /* Pods_SellMyCar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61F093D12635DF16007C7D9E /* Build configuration list for PBXNativeTarget "SellMyCar" */;
 			buildPhases = (
+				2A0A65D28EF81ED831FE1B63 /* [CP] Check Pods Manifest.lock */,
 				61F093B62635DF16007C7D9E /* Sources */,
 				61F093B72635DF16007C7D9E /* Frameworks */,
 				61F093B82635DF16007C7D9E /* Resources */,
+				AF427501A9CA67A26B241912 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,12 +157,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				61F093CD2635DF16007C7D9E /* LaunchScreen.storyboard in Resources */,
+				612AF44F2635E6D900B4058B /* GoogleService-Info.plist in Resources */,
 				61F093CA2635DF16007C7D9E /* Assets.xcassets in Resources */,
 				61F093C52635DF16007C7D9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A0A65D28EF81ED831FE1B63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SellMyCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF427501A9CA67A26B241912 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SellMyCar/Pods-SellMyCar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SellMyCar/Pods-SellMyCar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SellMyCar/Pods-SellMyCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61F093B62635DF16007C7D9E /* Sources */ = {
@@ -287,12 +359,14 @@
 		};
 		61F093D22635DF16007C7D9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 093599C281020EC367C02579 /* Pods-SellMyCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5U9LJV46H;
 				INFOPLIST_FILE = SellMyCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,18 +374,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mertejder.SellMyCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		61F093D32635DF16007C7D9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B80FDFBC3EE6D473627E70 /* Pods-SellMyCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5U9LJV46H;
 				INFOPLIST_FILE = SellMyCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mertejder.SellMyCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
